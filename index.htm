@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-      body, html {
-        height: 100%;
-        display: grid;
-        font-family: 'Roboto', sans-serif;
-        font-size: 40px;
-        font-weight: 300;
-      }
-      strong {
-        font-weight: 400;
-        font-size: 42px;
-      }
-      .center-me {
-        margin: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <div class='center-me'>
-      <p>
-        <strong>Hello</strong>, World!
-      </p>
-    </div>
-  </body>
+   <head>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+      <style type="text/css">
+         html {
+            height: 100%;
+            overflow: hidden;
+         }
+         body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+         }
+         #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+         p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            font-weight: 300;
+            margin: 20px;
+            white-space:nowrap;
+         }
+         strong {
+            font-size: 42px;
+            font-weight: 400;
+         }
+         img {
+            margin: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <p>
+            <strong>Hello</strong>, World!
+         </p>
+      </div>
+   </body>
 </html>
