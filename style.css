@@ -26,11 +26,12 @@ img {
    margin: 20px;
 }
 .github {
-    /*background-color: #314963;
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;*/
-    position: fixed;
-    bottom: 21px;
-    right: 25px;
+   font-family: 'Roboto', sans-serif;
+   /*background-color: #314963;
+   height: 40px;
+   width: 40px;
+   border-radius: 100%;*/
+   position: fixed;
+   bottom: 21px;
+   right: 25px;
 }
