@@ -1,5 +1,5 @@
 function main() {
-   //alert("error in main")
+   alert("Hello!")
 }
 
 function toggleAds() {
