@@ -69,12 +69,90 @@ img#github {
    height: 34px;
    margin-left: 10px;
 }
+.menu-div {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-grid;
+}
+.menu-div .icon-bar:nth-of-type(2) {
+  top: 2px;
+}
+.menu-div .icon-bar:nth-of-type(3) {
+  top: 4px;
+}
+.menu-div .icon-bar {
+  position: relative;
+  transition: all 500ms ease-in-out;
+  width: 20px;
+  display: block;
+  height: 2px;
+  background-color: white;
+}
+.menu-div:hover .icon-bar:nth-of-type(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.menu-div:hover .icon-bar:nth-of-type(2) {
+  background-color: transparent;
+}
+.menu-div:hover .icon-bar:nth-of-type(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+.menu-div .menu-toggle {
+  transition: all 500ms ease-in-out;
+}
+.menu-div:hover .menu-toggle {
+  transform: rotate(180deg);
+}
+.menu-toggle {
+  width: 50px;
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 50%;
+  z-index: 100;
+  background-color: lightblue;
+  border: 0px;
+}
+.menu-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 4px;
+  transition: all 750ms ease-in-out;
+  transition-property: opacity, top;
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  z-index: 99;
+  border: 0px;
+  color: white;
+  padding-top: 0px;
+  padding-left: 6px;
+}
+.menu-div:hover .menu-item:nth-of-type(1) {
+  top: 55px;
+}
+.menu-div:hover .menu-item:nth-of-type(2) {
+  top: 100px;
+}
+.menu-div:hover .menu-item:nth-of-type(3) {
+  top: 145px;
+}
+.menu-div:hover .menu-item:nth-of-type(4) {
+  top: 190px;
+}
+.menu-div:hover .menu-item:nth-of-type(5) {
+  top: 235px;
+}
+.menu-div:hover .menu-item {
+  opacity: 1;
+}
+.menu-div .icon-bar {
+  margin-left: 5px;
+  position: relative;
+}
 .github {
    font-family: 'Roboto', sans-serif;
-   /*background-color: #314963;
-   height: 40px;
-   width: 40px;
-   border-radius: 100%;*/
    position: fixed;
    bottom: 21px;
    right: 25px;
