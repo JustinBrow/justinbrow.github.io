@@ -1,15 +1,30 @@
 function main() {
-   setCookie("adsEnabled", false, 365);
-   setCookie("analyticsEnabled", false, 365);
-   alert("Hello!")
+   // Adverts/Analytics should be an opt in rather than an opt out.
+   let ads = getCookie("adsEnabled");
+   if (ads == "") {
+      setCookie("adsEnabled", false, 365);
+   }
+   let analytics = getCookie("adsEnabled");
+   if (analytics == "") {
+      setCookie("analyticsEnabled", false, 365);
+   }
+   //alert("Hello!")
 }
 
 function toggleAds() {
-   setCookie("adsEnabled", true, 30);
+   let ads = getCookie("adsEnabled");
+   if (ads == false) {
+      setCookie("adsEnabled", true, 30);
+      console.log("Thank you!")
+   }
 }
 
 function toggleAnalytics() {
-   setCookie("analyticsEnabled", true, 30);
+   let analytics = getCookie("adsEnabled");
+   if (analytics == "") {
+      setCookie("analyticsEnabled", true, 30);
+      console.log("The great Google monster thanks you...")
+   }
 }
 
 function setCookie(cname, cvalue, exdays) {
